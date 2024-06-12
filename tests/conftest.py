@@ -14,7 +14,7 @@ def fixture_cookie_config() -> dict:
         "distribution_name": "no-name",
         "repo_name": "python-no-name",
         "project_name": "No Name",
-        "project_short_description": "An example package. Generated with cookiecutter-pylibrary.",
+        "project_short_description": "An example package. Generated with cookiecutter-pypaper.",
         "repo_username": "ugognw",
         "repo_main_branch": "main",
         "year_from": str(datetime.datetime.now().year),
@@ -37,7 +37,7 @@ def fixture_cookie_config() -> dict:
         "__date": str(datetime.datetime.now().year),
         "__repo_url": "https://github.com/{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}",
         "_extensions": [
-            "pylibrary.JsonQuoteExtension",
+            "pypaper.JsonQuoteExtension",
             "jinja2_time.TimeExtension"
         ]
     }
