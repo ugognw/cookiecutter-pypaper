@@ -101,7 +101,7 @@ if __name__ == "__main__":
         except subprocess.CalledProcessError:
             try:
                 _ = subprocess.check_call(['hatch', 'run', 'pip', 'install', 'pre-commit'])
-            _ = subprocess.check_call(['hatch', 'run', 'pre-commit', 'autoupdate'])
+                _ = subprocess.check_call(['hatch', 'run', 'pre-commit', 'autoupdate'])
             except subprocess.CalledProcessError:
                 warn(
                 'Unable to install pre-commit.'.center(width, "#")
