@@ -40,8 +40,6 @@ This is an "all inclusive" sort of template.
 
 * pytest_ for testing (with `Coverage.py`_ for coverage analysis)
 
-* Black_ - for code formating
-
 * Ruff_ for static checks and import sorting
 
 * mypy_ for type-checks to supplement Ruff_
@@ -59,8 +57,6 @@ This is an "all inclusive" sort of template.
   * mypy_
 
   * pre-commit_
-
-  * Black_
 
   * `Coverage.py`_
 
@@ -106,7 +102,7 @@ You will be asked for these fields:
       - .. code:: python
 
             "Ugochukwu Nwosu"
-      - Main author of this library or application (used in ``AUTHORS.rst`` and ``pyproject.toml``).
+      - Main author of this library or application (used in ``AUTHORS.md`` and ``pyproject.toml``).
 
         Can be set in your ``~/.cookiecutterrc`` config file.
 
@@ -114,7 +110,7 @@ You will be asked for these fields:
       - .. code:: python
 
             "ugognw@gmail.com"
-      - Contact email of the author (used in ``AUTHORS.rst`` and ``pyproject.toml``).
+      - Contact email of the author (used in ``AUTHORS.md`` and ``pyproject.toml``).
 
         Can be set in your ``~/.cookiecutterrc`` config file.
 
@@ -122,7 +118,7 @@ You will be asked for these fields:
       - .. code:: python
 
             "https://www.law-two.com"
-      - Website of the author (used in ``AUTHORS.rst``).
+      - Website of the author (used in ``AUTHORS.md``).
 
         Can be set in your ``~/.cookiecutterrc`` config file.
 
@@ -136,7 +132,7 @@ You will be asked for these fields:
       - .. code:: python
 
             "An example package [...]"
-      - One line description of the project (used in ``README.rst`` and ``pyproject.toml``).
+      - One line description of the project (used in ``README.md`` and ``pyproject.toml``).
 
     * - ``package_name``
       - .. code:: python
@@ -181,6 +177,18 @@ You will be asked for these fields:
             "now"
       - List of comma-separated keywords to use in `pyproject.toml` (e.g., `physics,math,chemistry`).
 
+    * - ``chemistry_related``
+      - .. code:: python
+
+            "yes"
+      - Whether or not the paper is chemistry-related. If "yes", will add the appropriate classifier.
+
+    * - ``physics_related``
+      - .. code:: python
+
+            "yes"
+      - Whether or not the paper is physics-related. If "yes", will add the appropriate classifier.
+
     * - ``license``
       - .. code:: python
 
@@ -193,6 +201,12 @@ You will be asked for these fields:
         * Apache Software License 2.0
 
         What license to pick? https://choosealicense.com/
+
+    * - ``version``
+      - .. code:: python
+
+            "0.0.0"
+      - The initial version of the package.
 
     * - ``command_line_interface``
       - .. code:: python
@@ -214,6 +228,19 @@ You will be asked for these fields:
       - Name of the CLI bin/executable file (verify that the console script name in
         ``pyproject.toml`` matches your desired implementation; see
         `here <https://python-poetry.org/docs/pyproject/#scripts>`_).
+
+    * - ``support_type_checking``
+      - .. code:: python
+
+            "yes"
+      - Whether or not to support type checking. If "yes", a ``py.typed`` file will
+        be placed at ``src/package_name``.
+
+    * - ``pypi_disable_upload``
+      - .. code:: python
+
+            "yes"
+      - Whether or not to disable uploading the package to PyPI.
 
     * - ``pre_commit``
       - .. code:: python
@@ -247,13 +274,13 @@ You will be asked for these fields:
             "yes"
       - Whether or not to initialize a Git repository using `git init`. This also creates an
         initial commit and an initial tag with the version number specified in ``cookiecutter.version``.
-        Both are pushed to the repository specified in ``cookiecutter.repo_hosting``.
+        Both are pushed to the repository specified by `repo_name` and `repo_username`.
 
     * - ``install_package``
       - .. code:: python
 
             "yes"
-      - Whether or not to include install the newly created package via Poetry_.
+      - Whether or not to include install the newly created package via Hatch_.
         If a virtual environment is not already active, this will create a new virtual environment
         in which to install the current package.
 
@@ -288,26 +315,13 @@ If you have criticism or suggestions please open up an Issue or Pull Request.
 .. _Nox: https://nox.thea.codes/en/stable/
 .. _nox-poetry: https://nox-poetry.readthedocs.io/
 .. _pytest: http://pytest.org/
-.. _Dependabot: https://github.com/dependabot/dependabot-core
-.. _dependabot-standalone: https://gitlab.com/dependabot-gitlab/dependabot-standalone
-.. _Sphinx: http://sphinx-doc.org/
-.. _ReadTheDocs: https://readthedocs.org/
-.. _Black: https://black.readthedocs.io/
 .. _Ruff: https://beta.ruff.rs/docs/
 .. _mypy: https://mypy.readthedocs.io/
 .. _pre-commit: https://pre-commit.com
 .. _Coverage.py: https://coverage.readthedocs.io/
-.. _Coveralls: https://coveralls.io/
-.. _Codecov: http://codecov.io/
-.. _Codacy: https://codacy.com/
-.. _Code Climate: https://codeclimate.com/
-.. _Poetry: https://python-poetry.org
-.. _pip-licenses: https://github.com/raimon49/pip-licenses
-.. _bumpversion: https://pypi.org/project/bump2version
-.. _bump2version: https://github.com/c4urself/bump2version
+.. _Hatch: https://hatch.pypa.io/latest/
 .. _argparse: https://docs.python.org/3/library/argparse.html
 .. _click: http://click.pocoo.org/
 .. _`Python Fire`: https://github.com/google/python-fire
 .. _Typer: https://typer.tiangolo.com
 .. _rich: https://rich.readthedocs.io/
-.. _gitchangelog: https://github.com/vaab/gitchangelog
