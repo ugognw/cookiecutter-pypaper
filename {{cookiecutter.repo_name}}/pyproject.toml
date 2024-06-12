@@ -100,16 +100,16 @@ python = "3.11"
 
 [tool.hatch.envs.default.scripts]
 test = "pytest {args:tests}"
-test-cov = "pytest{{ %- if cookiecutter.pytest_datadir == "yes" %}} -n auto{%- endif %} --cov-branch --cov=src/{{ cookiecutter.package_name }} --cov-report=html --cov-report=lcov --cov-report=xml --cov-report=term-missing {args:tests/}"
+test-cov = "pytest{%- if cookiecutter.pytest_datadir == "yes" %} -n auto{%- endif %} --cov-branch --cov=src/{{ cookiecutter.package_name }} --cov-report=html --cov-report=lcov --cov-report=xml --cov-report=term-missing {args:tests/}"
 
 [tool.hatch.envs.test]
 dependencies = [
   "pytest==7.4.3",
   "pytest-cov==4.1.0",
-{ %- if cookiecutter.pytest_datadir == "yes" %}
+{%- if cookiecutter.pytest_datadir == "yes" %}
   "pytest-datadir==1.5.0",
 {%- endif %}
-{ %- if cookiecutter.pytest_datadir == "yes" %}
+{%- if cookiecutter.pytest_datadir == "yes" %}
   "pytest-xdist==3.5.0",
 {%- endif %}
 ]
