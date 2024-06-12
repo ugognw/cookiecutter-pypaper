@@ -7,7 +7,7 @@ name = "{{ cookiecutter.distribution_name }}"
 description = "{{ cookiecutter.project_short_description }}"
 readme = "README.rst"
 requires-python = ">=3.10"
-license = "{{ cookiecutter.license }}"
+license = {file = "LICENSE"}
 dynamic = ["version"]
 keywords = [
 {%- if cookiecutter.keywords | trim != '' %}
