@@ -1,12 +1,12 @@
-# "{{ cookiecutter.project_name }}"
+# {{ cookiecutter.project_name }}
 
-"{{ cookiecutter.project_short_description }}"
+{{ cookiecutter.project_short_description }}
 
 [//]: # (Insert a summary figure here)
 
 ## Table of Contents
 
-- ["{{ cookiecutter.project\_name }}"](#-cookiecutterproject_name-)
+- [{{ cookiecutter.project\_name }}](#-cookiecutterproject_name-)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
   - [Quick Start](#quick-start)
@@ -37,7 +37,12 @@ would any Python package. Namely, run
 python3 -m pip install -e .
 ```
 
-from the project root (the directory containing this README).
+from the project root (the directory containing this README). Then, to use
+the package, do
+
+```python3
+import {{ cookiecutter.package_name }}
+```
 
 ## Data Aggregation Scripts
 
