@@ -6,7 +6,6 @@ import pytest
 
 class TestPyProjectTOML:
     @staticmethod
-    @pytest.mark.repo_hosting('github.com')
     @pytest.mark.template_dir('{{cookiecutter.repo_name}}')
     def test_render(cookie_config: dict, environment: Environment):
         filename = pathlib.Path('test_results/pyproject.toml')

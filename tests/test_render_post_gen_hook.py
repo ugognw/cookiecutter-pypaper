@@ -6,7 +6,6 @@ import pytest
 
 class TestPostGenHook:
     @staticmethod
-    @pytest.mark.repo_hosting('github.com')
     @pytest.mark.template_dir('hooks')
     def test_render(cookie_config: dict, environment: Environment):
         filename = pathlib.Path('test_results/post_gen_project.py')

@@ -1,0 +1,4 @@
+[tool.pytest.ini.options]
+markers = [
+    'template_dir',
+]

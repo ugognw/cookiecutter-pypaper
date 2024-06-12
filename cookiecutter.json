@@ -38,8 +38,7 @@
     "pytest_xdist": ["yes", "no"],
     "initialize_git_repository": ["yes", "no"],
     "install_package": ["yes", "no"],
-    "__repo_hosting": ["github.com"],
-    "__repo_url": "https://{{ cookiecutter.__repo_hosting }}/{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}",
+    "__repo_url": "https://github.com/{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}",
     "_extensions": [
         "pylibrary.JsonQuoteExtension",
         "jinja2_time.TimeExtension"

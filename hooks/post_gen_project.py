@@ -47,7 +47,7 @@ if __name__ == "__main__":
         _ = subprocess.check_call(['git', 'add', '--all'])
         _ = subprocess.check_call(['git', 'commit', '-m', '"Add initial project skeleton."'])
         _ = subprocess.check_call(['git', 'tag', 'v{{ cookiecutter.version }}'])
-        _ = subprocess.check_call(['git', 'remote', 'add', 'origin', 'git@{{ cookiecutter.repo_hosting }}:{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}.git'])
+        _ = subprocess.check_call(['git', 'remote', 'add', 'origin', 'git@{{ cookiecutter.____repo_url }}:{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}.git'])
         _ = subprocess.check_call(['git', 'push', '-u', 'origin', '{{ cookiecutter.repo_main_branch }}'])
         _ = subprocess.check_call(['git', 'push', '-u', 'origin', 'v{{ cookiecutter.version }}'])
     except subprocess.CalledProcessError as err:
@@ -127,7 +127,7 @@ if __name__ == "__main__":
             'git add --all',
             'git commit -m "Add initial project skeleton."',
             'git tag v{{ cookiecutter.version }}',
-            'git remote add origin git@{{ cookiecutter.repo_hosting }}:{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}.git',
+            'git remote add origin git@github.com:{{ cookiecutter.repo_username }}/{{ cookiecutter.repo_name }}.git',
             'git push -u origin {{ cookiecutter.repo_main_branch }}',
             'git push -u origin {{ cookiecutter.repo_main_branch }} v{{ cookiecutter.version }}'
         )
