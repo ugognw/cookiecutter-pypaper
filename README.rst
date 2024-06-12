@@ -165,11 +165,17 @@ You will be asked for these fields:
             "main"
       - The name of the default branch for this project.
 
-    * - ``release_date``
+    * - ``year_from``
       - .. code:: python
 
             "today"
-      - Release date of the project (ISO 8601 format) default to today (used in ``CHANGELOG.rst``).
+      - The effective start date of the project license. (ISO 8601 format) Defaults to today.
+
+    * - ``year_to``
+      - .. code:: python
+
+            "today"
+      - The effective end date of the project license. (ISO 8601 format) Defaults to today.
 
     * - ``keywords``
       - .. code:: python
