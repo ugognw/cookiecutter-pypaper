@@ -1,5 +1,5 @@
 ======================
-cookiecutter-pylibrary
+cookiecutter-pypaper
 ======================
 
 Cookiecutter_ template for a scientific paper data repository as a Python library.

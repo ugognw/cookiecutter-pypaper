@@ -8,7 +8,7 @@ little bit helps, and credit will always be given.
 Bug reports
 ===========
 
-When `reporting a bug <https://github.com/ugognw/cookiecutter-pylibrary/issues>`_ please include:
+When `reporting a bug <https://github.com/ugognw/cookiecutter-pypaper/issues>`_ please include:
 
     * Your operating system name and version.
     * Any details about your local setup that might be helpful in troubleshooting.
@@ -17,14 +17,14 @@ When `reporting a bug <https://github.com/ugognw/cookiecutter-pylibrary/issues>`
 Documentation improvements
 ==========================
 
-cookiecutter-pylibrary could always use more documentation, whether as part of the
-official cookiecutter-pylibrary docs, in docstrings, or even on the web in blog posts,
+cookiecutter-pypaper could always use more documentation, whether as part of the
+official cookiecutter-pypaper docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Feature requests and feedback
 =============================
 
-The best way to send feedback is to file an issue at https://github.com/ugognw/cookiecutter-pylibrary/issues.
+The best way to send feedback is to file an issue at https://github.com/ugognw/cookiecutter-pypaper/issues.
 
 If you are proposing a feature:
 
@@ -35,12 +35,12 @@ If you are proposing a feature:
 Development
 ===========
 
-To set up `cookiecutter-pylibrary` for local development:
+To set up `cookiecutter-pypaper` for local development:
 
-1. `Fork cookiecutter-pylibrary on GitHub <https://github.com/ugognw/cookiecutter-pylibrary/fork>`_.
+1. `Fork cookiecutter-pypaper on GitHub <https://github.com/ugognw/cookiecutter-pypaper/fork>`_.
 2. Clone your fork locally::
 
-    git clone git@github.com:your_username_here/cookiecutter-pylibrary.git
+    git clone git@github.com:your_username_here/cookiecutter-pypaper.git
 
 3. Create a branch for local development::
 
@@ -76,12 +76,12 @@ Tips
 
 If you want to add a context option, you need to:
 
-* Add the actual option in `cookiecutter.json <https://github.com/ugognw/cookiecutter-pylibrary/blob/main/cookiecutter.json>`_
+* Add the actual option in `cookiecutter.json <https://github.com/ugognw/cookiecutter-pypaper/blob/main/cookiecutter.json>`_
 * Add it in the cookiecutter test builder suite:
 
-  * Edit `conftest.py <https://github.com/ugognw/cookiecutter-pylibrary/blob/main/tests/conftest.py>`_
-* Change the `post_gen_hook.py <https://github.com/ugognw/cookiecutter-pylibrary/blob/main/hooks/post_gen_hook.py>`_ to make any necessary changes.
-* Add the option and a description to `README.rst <https://github.com/ugognw/cookiecutter-pylibrary/blob/main/README.rst>`_.
-* Add an entry in the `CHANGELOG.rst <https://github.com/ugognw/cookiecutter-pylibrary/blob/main/CHANGELOG.rst>` under the heading "unreleased".
+  * Edit `conftest.py <https://github.com/ugognw/cookiecutter-pypaper/blob/main/tests/conftest.py>`_
+* Change the `post_gen_hook.py <https://github.com/ugognw/cookiecutter-pypaper/blob/main/hooks/post_gen_hook.py>`_ to make any necessary changes.
+* Add the option and a description to `README.rst <https://github.com/ugognw/cookiecutter-pypaper/blob/main/README.rst>`_.
+* Add an entry in the `CHANGELOG.rst <https://github.com/ugognw/cookiecutter-pypaper/blob/main/CHANGELOG.rst>` under the heading "unreleased".
 
 .. _pytest: http://pytest.org/
