@@ -280,7 +280,8 @@ You will be asked for these fields:
             "yes"
       - Whether or not to initialize a Git repository using `git init`. This also creates an
         initial commit and an initial tag with the version number specified in ``cookiecutter.version``.
-        Both are pushed to the repository specified by `repo_name` and `repo_username`.
+        Both are pushed to the repository specified by `repo_name` and `repo_username`. **The repository
+        should be created prior to running this cookiecutter.**
 
     * - ``install_package``
       - .. code:: python
