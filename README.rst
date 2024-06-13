@@ -17,7 +17,7 @@ Cookiecutter_ template for a scientific paper data repository as a Python librar
   inspiration from `python-blueprint <https://github.com/johnthagen/python-blueprint/tree/main>`_
   and `cookiecutter-hypermodern-python <https://github.com/cjolowicz/cookiecutter-hypermodern-python/tree/main>`_
 * There's a bare library using this template (if you're curious about the final
-  result): https://github.com/ugognw/python-no-name.
+  result): https://github.com/ugognw/python-no-name-paper.
 * If you have a web application (not a library) you might want to take a look at
   `django-docker <https://github.com/evozon/django-docker>`_.
 

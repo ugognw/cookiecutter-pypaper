@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "{{ cookiecutter.distribution_name }}"
 description = "{{ cookiecutter.project_short_description }}"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
 dynamic = ["version"]

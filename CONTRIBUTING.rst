@@ -69,7 +69,7 @@ For merging, you should:
 
 1. Include passing tests (run ``pytest tests``).
 2. Update documentation when there's new API, functionality etc.
-3. Add a note to ``CHANGELOG.rst`` about the changes.
+3. Add a note to ``CHANGELOG.md`` about the changes.
 
 Tips
 ----
@@ -79,9 +79,9 @@ If you want to add a context option, you need to:
 * Add the actual option in `cookiecutter.json <https://github.com/ugognw/cookiecutter-pypaper/blob/main/cookiecutter.json>`_
 * Add it in the cookiecutter test builder suite:
 
-  * Edit `conftest.py <https://github.com/ugognw/cookiecutter-pypaper/blob/main/tests/conftest.py>`_
+* Edit `conftest.py <https://github.com/ugognw/cookiecutter-pypaper/blob/main/tests/conftest.py>`_
 * Change the `post_gen_hook.py <https://github.com/ugognw/cookiecutter-pypaper/blob/main/hooks/post_gen_hook.py>`_ to make any necessary changes.
-* Add the option and a description to `README.rst <https://github.com/ugognw/cookiecutter-pypaper/blob/main/README.rst>`_.
-* Add an entry in the `CHANGELOG.rst <https://github.com/ugognw/cookiecutter-pypaper/blob/main/CHANGELOG.rst>` under the heading "unreleased".
+* Add the option and a description to `README.md <https://github.com/ugognw/cookiecutter-pypaper/blob/main/README.md>`_.
+* Add an entry in the `CHANGELOG.md <https://github.com/ugognw/cookiecutter-pypaper/blob/main/CHANGELOG.md>` under the heading "unreleased".
 
 .. _pytest: http://pytest.org/
