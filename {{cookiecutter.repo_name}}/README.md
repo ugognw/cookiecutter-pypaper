@@ -6,13 +6,14 @@
 
 ## Table of Contents
 
-- [{{ cookiecutter.project_name }}](#-cookiecutterproject_name-)
+- [{{ cookiecutter.project\_name }}](#-cookiecutterproject_name-)
   - [Table of Contents](#table-of-contents)
   - [Requirements](#requirements)
   - [Quick Start](#quick-start)
   - [Data Aggregation Scripts](#data-aggregation-scripts)
   - [Loading the data into Python](#loading-the-data-into-python)
   - [CLI Commands](#cli-commands)
+  - [Environment Variables](#environment-variables)
   - [Navigating the Data](#navigating-the-data)
     - [Data Structure](#data-structure)
     - [Data Manifest](#data-manifest)
@@ -55,6 +56,10 @@ import {{ cookiecutter.package_name }}
 ## CLI Commands
 
 [//]: # (Describe any CLI commands here)
+
+## Environment Variables
+
+[//]: # (Describe any relevant environment variables here)
 
 ## Navigating the Data
 

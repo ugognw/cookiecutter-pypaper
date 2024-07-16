@@ -46,6 +46,8 @@ This is an "all inclusive" sort of template.
 
 * Virtual environment management and package building/publishing with Hatch
 
+* Project settings (e.g., database path)
+
 * *Optional* git hooks via pre-commit_
 
 * *Optional* command-line interface via argparse_, click_, `Python Fire`_, or Typer_ (and rich_)
